@@ -26,12 +26,11 @@ Please keep in mind, Kometa is a very seasoned application while Agregarr is sti
 | Collections | ✓   | ✓   |
 | Collection Scheduling | ✓   | ✓   |
 | Search/Filters/Conditional/Attributes | Limted | ✓   |
-| Multi-source Collections | ✓   | ✗   |
+| Multi-source Collections | ✓   | ?   |
 | Overlays | ✓   | ✓   |
 | Overlay Editing | ✓   | ✓   |
 | Overlay Templates | ✓   | ✓   |
 | Poster Customisation | ✓   | ✓   |
-| Poster Editor | ✓ | ✗  |
 | Poster Templates | ✓   |  ✗  |
 | Major Data/List Providers | ✓   | ✓   |
 | MediUX Integration | ✗   | ✓   |
@@ -69,7 +68,7 @@ For further information on either application please visit the respective links 
 | <u>Collections</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Agregarr</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Kometa</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --- |:---:|:---:|
 |     |     |     |
-| **Seperators** | ✗   | ✓   |
+| **Seperators** | ✓   | ✓   |
 |     |     |     |
 | **Coming Soon** |     |     |
 | &nbsp;&nbsp;&nbsp;- Monitored | ✓   | ✗   |
@@ -160,8 +159,8 @@ For further information on either application please visit the respective links 
 | &nbsp;&nbsp;&nbsp;- Subtitle Languages | ✗   | ✓   |
 |     |     |     |
 | **People** |     |     |
-| &nbsp;&nbsp;&nbsp;- Actors | ✗   | ✓   |
-| &nbsp;&nbsp;&nbsp;- Directors | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Actors | ✓   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Directors | ✓   | ✓   |
 | &nbsp;&nbsp;&nbsp;- Producers | ✗   | ✓   |
 | &nbsp;&nbsp;&nbsp;- Writers | ✗   | ✓   |
 |     |     |     |
@@ -318,7 +317,7 @@ For further information on either application please visit the respective links 
 |     |     |     |
 | **Trakt** | ✓   | ✓   |
 | &nbsp;&nbsp;&nbsp;- Box Office |     | ✓   |
-| &nbsp;&nbsp;&nbsp;- Recommendations |     |     |
+| &nbsp;&nbsp;&nbsp;- Recommendations | ✓    |     |
 |     |     |     |
 | **Trakt Chart <br/> (Attributes not listed i.e. by genre,<br/> votes, statuses, ratings)** |     |     |
 | &nbsp;&nbsp;&nbsp;- Trending Now | ✓   | ✓   |
@@ -329,7 +328,7 @@ For further information on either application please visit the respective links 
 | &nbsp;&nbsp;&nbsp;- Most Favorited | ✓   | ✗   |
 | &nbsp;&nbsp;&nbsp;- Box Office | ✓   | ✗   |
 | &nbsp;&nbsp;&nbsp;- Random | ✓   | ✗   |
-| &nbsp;&nbsp;&nbsp;- Recommended | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Recommended | ✓   | ✓   |
 |     |     |     |
 | **Trakt User Lists** |     |     |
 | &nbsp;&nbsp;&nbsp;- Watchlist | ?   | ✓   |
@@ -484,3 +483,74 @@ For further information on either application please visit the respective links 
 |     |     |     |
 | **Utility** |     |     |
 | &nbsp;&nbsp;&nbsp;- Direct Play Only | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Placeholder Overlay | ✓   | ✗   |
+
+## **<u>Other Comparisons</u>**
+
+| <u>Additional Functions</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Agregarr</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Kometa</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| --- |:---:|:---:|
+|     |     |     |
+| **Mediux** |     |     |
+| &nbsp;&nbsp;&nbsp;- Movie Posters | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Series Posters | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Season Posters | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Episode Title Cards | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Album Art | ✗   | ✓   |
+|     |     |     |
+| **Grab Missing Media/Add to Radarr** |     |     |
+| &nbsp;&nbsp;&nbsp;- Add Missing (True/False) | ✓   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Existing (True/False) | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Upgrade Existing (True/False) | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Monitor Existing (True/False) | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Ignore Cache (True/False) | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Root Folder Path (Folder Path) | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Monitor Attribute (Movie, Collection or None | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Availability (Announced, Cinemas, Released, db)| ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Quality Profile | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Tag (List or comma-separeted string)| ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Search (True or False) | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Append Tag | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Remove Tag | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Tag Sync | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Skip item if position in list is greater than | ✓   | ✗   |
+| &nbsp;&nbsp;&nbsp;- Minimum release year | ✓   | ✗   |
+| &nbsp;&nbsp;&nbsp;- Minimum IMDb rating | ✓   | ✗   |
+| &nbsp;&nbsp;&nbsp;- Minimum Rotten Tomatoes rating | ✓   | ✗   |
+| &nbsp;&nbsp;&nbsp;- Genre Filter | ✓   | ✗   |
+| &nbsp;&nbsp;&nbsp;- Country Filter | ✓   | ✗   |
+| &nbsp;&nbsp;&nbsp;- Language Filter | ✓   | ✗   |
+| &nbsp;&nbsp;&nbsp;- Download Option (Arr or Overseer) | ✓   | ✗   |
+|     |     |     |
+| **Grab Missing Media/Add to Sonarr** |     |     |
+| &nbsp;&nbsp;&nbsp;- Add Missing (True/False) | ✓   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Existing (True/False) | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Upgrade Existing (True/False) | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Monitor Existing (True/False) | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Ignore Cache (True/False) | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Root Folder Path (Folder Path) | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Monitor Attribute (Movie, Collection or None | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Availability (All, Future, Missing, Existing, Pilot, First, Latest, None)| ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Quality Profile | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Language Profile | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Series Type (Standard, Daily, Anime) | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Season Folder (True/False) | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Tag (List or comma-separeted string)| ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Search (True or False) | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Append Tag | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Override Series Cutoff (True/False) | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Remove Tag | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Tag Sync | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Skip item if position in list is greater than | ✓   | ✗   |
+| &nbsp;&nbsp;&nbsp;- Minimum release year | ✓   | ✗   |
+| &nbsp;&nbsp;&nbsp;- Minimum IMDb rating | ✓   | ✗   |
+| &nbsp;&nbsp;&nbsp;- Minimum Rotten Tomatoes rating | ✓   | ✗   |
+| &nbsp;&nbsp;&nbsp;- Genre Filter | ✓   | ✗   |
+| &nbsp;&nbsp;&nbsp;- Country Filter | ✓   | ✗   |
+| &nbsp;&nbsp;&nbsp;- Language Filter | ✓   | ✗   |
+| &nbsp;&nbsp;&nbsp;- Download Option (Arr or Overseer) | ✓   | ✗   |
+|     |     |     |
+| **Preroll Managment** |     |     |
+| &nbsp;&nbsp;&nbsp;- Collection Builder | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Multi-range Date Scheduling | ✗   | ✓   |
+| &nbsp;&nbsp;&nbsp;- Sequence Building | ✗   | ✗   |
+| &nbsp;&nbsp;&nbsp;- Multipath Preroll Locations | ✗   | ✓   |

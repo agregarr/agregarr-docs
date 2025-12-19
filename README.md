@@ -1,3 +1,13 @@
+# Agregarr Documentation Website
+
+This repo contains the documentation for Agregarr, a Plex Collections manager
+
+Feel free to add or edit documentation and create a pull request
+
+Agregarr documentation - https://agregarr.org
+
+Agregarr repo - https://github.com/agregarr/agregarr
+
 # Website
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.

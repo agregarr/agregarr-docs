@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import StructuredData from '@site/src/components/StructuredData';
 import Heading from '@theme/Heading';
 import CodeBlock from '@theme/CodeBlock';
 
@@ -93,8 +94,9 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Plex Collections Manager`}
-      description="Plex Collections Manager. Effortlessly create and manage your Plex collections and Home screen.">
+      title={`Agregarr - Official Documentation`}
+      description="Agregarr is the easiest way to create and manage Plex Collections. Official documentation for installation, setup, and collection management.">
+      <StructuredData />
       <HomepageHeader />
       <main>
         <HomepageFeatures />

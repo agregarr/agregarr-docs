@@ -50,6 +50,34 @@ const config: Config = {
           priority: 0.5,
           ignorePatterns: ['/tags/**'],
           filename: 'sitemap.xml',
+          createSitemapItems: async (params) => {
+            const {defaultCreateSitemapItems, ...rest} = params;
+            const items = await defaultCreateSitemapItems(rest);
+            return items.map((item) => {
+              // Homepage - highest priority, daily updates
+              if (item.url === 'https://agregarr.org/') {
+                return {...item, priority: 1.0, changefreq: 'daily'};
+              }
+              // Key setup pages - very high priority
+              if (item.url.match(/\/(installation|setup|creating-a-collection)$/)) {
+                return {...item, priority: 0.9, changefreq: 'weekly'};
+              }
+              // Important overview pages
+              if (item.url.includes('/overview')) {
+                return {...item, priority: 0.8, changefreq: 'weekly'};
+              }
+              // FAQ
+              if (item.url.includes('/faq')) {
+                return {...item, priority: 0.8, changefreq: 'weekly'};
+              }
+              // All docs pages
+              if (item.url.includes('/docs/')) {
+                return {...item, priority: 0.7, changefreq: 'weekly'};
+              }
+              // Everything else (search, etc.)
+              return {...item, priority: 0.3, changefreq: 'monthly'};
+            });
+          },
         },
       } satisfies Preset.Options,
     ],
@@ -96,11 +124,9 @@ const config: Config = {
   themeConfig: {
     image: 'img/logo_stacked_filled.png',
     metadata: [
-      {name: 'keywords', content: 'plex, collections, plex collections, automation, radarr, sonarr, trakt, imdb, tmdb, plex manager, agregarr, arr apps'},
-      {name: 'description', content: 'Agregarr - Effortless Plex Collections Management. Automate your Plex collections from Trakt, IMDb, TMDb, Letterboxd, and more. Integrates with Radarr and Sonarr.'},
-      {name: 'og:title', content: 'Agregarr - Plex Collections Manager'},
-      {name: 'og:description', content: 'Automate your Plex collections from multiple sources. Integrates with Radarr, Sonarr, and popular list services.'},
-      {name: 'og:type', content: 'website'},
+      {name: 'keywords', content: 'agregarr, plex, collections, plex collections, automation, radarr, sonarr, trakt, imdb, tmdb, plex manager, arr apps'},
+      {property: 'og:site_name', content: 'Agregarr'},
+      {property: 'og:type', content: 'website'},
       {name: 'twitter:card', content: 'summary_large_image'},
     ],
     colorMode: {

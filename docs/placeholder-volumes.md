@@ -41,6 +41,21 @@ services:
 
 Then, under `Settings > Downloads > Placeholder Root Folders`, select the container path you created above, `/data/movies` for Movies, and `/data/tv` for TV Shows. That's it! Placeholders can now be created in Plex to show unreleased/unavailable content.
 
+## Example Final Setup
+
+Plex has your normal media folders `E:\media\movies` and `E:\media\tv`. You create new folders `E:\media\placeholders\movies` and `E:\media\placeholders\tv`, and add these to Plex. You do NOT add these to Radarr/Sonarr.
+
+In your docker compose you add these lines to your volumes
+
+```yaml
+      volumes:
+      # - C:\existing\config\path:/app/config
+        - E:\media\placeholders\movies:/data/movies
+        - E:\media\placeholders\tv:/data/tv
+```
+
+Then in Agregarr you would select `/data/movies` and `/data/tv` as your root folders.
+
 ## Understanding Docker Volumes
 
 Docker fundamentally runs each app in 'containers', this is an isolated environment and for it to see anything outside of its container, you must give it specific access. 

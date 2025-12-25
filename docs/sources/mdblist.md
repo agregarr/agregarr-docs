@@ -10,7 +10,7 @@ Agregarr uses the MDBList API, so you must supply an API key before creating col
 
 1. Sign in at [mdblist.com/api](https://mdblist.com/api/) and generate an API key.
 2. In Agregarr open **Settings → Sources → MDBList**, paste the key, test, and save.
-3. The same key powers both MDBList collections and the [Network Originals](./originals) source.
+3. The same key powers both MDBList collections and the [Network Originals](/docs/sources/originals) source.
 
 ## Sub-types
 

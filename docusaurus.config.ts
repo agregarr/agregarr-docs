@@ -19,6 +19,9 @@ const config: Config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
+  // Enforce trailing slashes for consistent URLs
+  trailingSlash: true,
+
   organizationName: 'agregarr',
   projectName: 'agregarr',
 

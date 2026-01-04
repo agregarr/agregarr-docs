@@ -47,9 +47,7 @@ How many items to show. Agregarr will try to fill the collection to this number 
 
 ### Unwatched Only
 
-Enable this to create a smart collection that only shows unwatched content. It creates two collections:
-- Base collection (pushed to bottom of library and collection tab, hidden from home/recommended, all items)
-- Smart collection (visible, unwatched only)
+Enable this to create a smart collection that only shows unwatched content. This uses labels to create a smart collection with the unwatched filter.
 
 Each user viewing the collection sees their own unwatched items.
 

@@ -37,6 +37,9 @@ function HomepageHeader() {
           <a href="https://www.reddit.com/r/agregarr/" target="_blank" rel="noopener noreferrer">
             <img src="https://img.shields.io/reddit/subreddit-subscribers/agregarr?style=social&logo=reddit&label=Reddit" alt="Reddit Subscribers" />
           </a>
+          <a href="https://hosted.weblate.org/projects/agregarr/agregarr-frontend/" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.shields.io/weblate/progress/agregarr?style=social&logo=weblate" alt="Translation status" />
+          </a>
         </div>
       </div>
     </header>

@@ -288,6 +288,11 @@ const sidebars: SidebarsConfig = {
       id: 'placeholder-volumes',
       label: 'Placeholder Docker Volumes',
     },
+    {
+      type: 'doc',
+      id: 'contributing-translations',
+      label: 'Translations',
+    },
   ],
 
   // FAQ sidebar
